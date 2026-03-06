@@ -1,14 +1,10 @@
-FROM node:18-alpine
-
-# Tambahkan deps untuk native bindings
-RUN apk add --no-cache python3 make g++
+FROM node:18
 
 WORKDIR /app
 
 COPY package*.json ./
 
-# Hapus package-lock.json dan install ulang tanpa cache
-RUN rm -f package-lock.json && npm install --legacy-peer-deps
+RUN npm ci --legacy-peer-deps
 
 COPY . .
 
