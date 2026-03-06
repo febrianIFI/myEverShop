@@ -1,6 +1,0 @@
-{
-  "system": {
-    "port": 8080,
-    "baseUrl": "https://myevershop-production.up.railway.app"
-  }
-}
