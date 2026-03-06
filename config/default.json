@@ -1,6 +1,6 @@
 {
   "system": {
-    "port": 3000,
+    "port": 8080,
     "database": {
       "host": "DB_HOST",
       "port": "DB_PORT",
